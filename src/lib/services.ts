@@ -171,7 +171,7 @@ export const servicesList: Service[] = [
     description: 'Acupressure, acupuncture, and cupping for targeted relief at your home in Gurgaon.',
     longDescription: 'We offer Traditional Chinese Medicine (TCM) therapies like acupuncture, acupressure, and cupping at your home in Gurgaon and across NCR. These ancient techniques are effective for chronic pain management, stress reduction, and overall wellness.',
     image: {
-      src: '/services/tcm.jpg',
+      src: '/tcm.jpeg',
       alt: 'A client receiving a TCM therapy session at their home in Gurgaon.',
       aiHint: 'tcm treatment'
     },
