@@ -70,7 +70,7 @@ export const servicesList: Service[] = [
     description: 'Gentle, non-invasive remedies for long-term wellness from a home-visit doctor in Delhi.',
     longDescription: 'Our qualified homeopathy doctors in Delhi offer gentle, individualized, and effective treatments for a wide range of chronic and acute conditions. We provide remedies that stimulate the body\'s own healing abilities for lasting wellness without side effects.',
     image: {
-      src: '/services/homeopathy.jpg',
+      src: '/homeyopathy.webp',
       alt: 'Homeopathic pills and liquid dilutions being prepared by a doctor in Delhi.',
       aiHint: 'homeopathy medicine'
     },
