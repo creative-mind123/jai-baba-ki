@@ -103,7 +103,7 @@ export const servicesList: Service[] = [
     description: 'Confidential support for your mental and emotional well-being at home in Delhi NCR.',
     longDescription: 'We provide confidential and compassionate mental health counseling services at your home or online in the Delhi NCR region. Our licensed therapists help you navigate challenges like stress, anxiety, depression, and relationship issues in a safe and supportive environment.',
     image: {
-      src: '/services/counseling.jpg',
+      src: '/counseling_session.jpg',
       alt: 'A compassionate counselor providing a mental health session.',
       aiHint: 'therapy session'
     },
