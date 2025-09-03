@@ -38,7 +38,7 @@ export const servicesList: Service[] = [
     description: 'Ancient wisdom for modern ailments. At-home consultations in Delhi, Gurgaon, and Noida.',
     longDescription: 'Our Ayurveda experts in Delhi NCR provide personalized at-home consultations to address your unique health concerns. We create holistic treatment plans combining diet, lifestyle, and herbal remedies to restore your natural balance and help you find relief from chronic issues.',
     image: {
-      src: '/services/ayurveda.jpg',
+      src: '/ayurveda-docctor.jpg',
       alt: 'An Ayurvedic doctor providing a consultation to a patient at their home in Delhi NCR.',
       aiHint: 'ayurveda doctor'
     },
@@ -54,7 +54,7 @@ export const servicesList: Service[] = [
     description: 'Harnessing nature\'s power to heal and restore balance. Available across the NCR.',
     longDescription: 'Experience the healing power of nature with our at-home Naturopathy services across Delhi and NCR. We focus on natural therapies like hydrotherapy, mud therapy, and nutrition counseling to detoxify your body, boost immunity, and manage chronic conditions.',
     image: {
-      src: '/services/naturopathy.jpg',
+      src: '/naturopathy.jpg',
       alt: 'A display of natural herbs and remedies used in Naturopathy in an NCR home.',
       aiHint: 'naturopathy treatment'
     },
