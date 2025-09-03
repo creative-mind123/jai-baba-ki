@@ -38,7 +38,7 @@ export const servicesList: Service[] = [
     description: 'Ancient wisdom for modern ailments. At-home consultations in Delhi, Gurgaon, and Noida.',
     longDescription: 'Our Ayurveda experts in Delhi NCR provide personalized at-home consultations to address your unique health concerns. We create holistic treatment plans combining diet, lifestyle, and herbal remedies to restore your natural balance and help you find relief from chronic issues.',
     image: {
-      src: 'https://picsum.photos/600/400?random=51',
+      src: '/services/ayurveda.jpg',
       alt: 'An Ayurvedic doctor providing a consultation to a patient at their home in Delhi NCR.',
       aiHint: 'ayurveda doctor'
     },
@@ -54,7 +54,7 @@ export const servicesList: Service[] = [
     description: 'Harnessing nature\'s power to heal and restore balance. Available across the NCR.',
     longDescription: 'Experience the healing power of nature with our at-home Naturopathy services across Delhi and NCR. We focus on natural therapies like hydrotherapy, mud therapy, and nutrition counseling to detoxify your body, boost immunity, and manage chronic conditions.',
     image: {
-      src: 'https://picsum.photos/600/400?random=52',
+      src: '/services/naturopathy.jpg',
       alt: 'A display of natural herbs and remedies used in Naturopathy in an NCR home.',
       aiHint: 'naturopathy treatment'
     },
@@ -70,7 +70,7 @@ export const servicesList: Service[] = [
     description: 'Gentle, non-invasive remedies for long-term wellness from a home-visit doctor in Delhi.',
     longDescription: 'Our qualified homeopathy doctors in Delhi offer gentle, individualized, and effective treatments for a wide range of chronic and acute conditions. We provide remedies that stimulate the body\'s own healing abilities for lasting wellness without side effects.',
     image: {
-      src: 'https://picsum.photos/600/400?random=53',
+      src: '/services/homeopathy.jpg',
       alt: 'Homeopathic pills and liquid dilutions being prepared by a doctor in Delhi.',
       aiHint: 'homeopathy medicine'
     },
@@ -86,7 +86,7 @@ export const servicesList: Service[] = [
     description: 'Expert home-visit physiotherapy in Delhi NCR for pain relief, mobility, and post-surgery rehabilitation.',
     longDescription: 'Get expert physiotherapy care in the comfort of your home in Delhi NCR. Our certified physiotherapists specialize in post-surgery rehab, stroke recovery, sports injuries, arthritis, and chronic pain management, using advanced techniques for a speedy recovery.',
     image: {
-      src: 'https://picsum.photos/600/400?random=54',
+      src: '/services/physiotherapy.jpg',
       alt: 'A physiotherapist assisting a patient with mobility exercises in their Delhi NCR home.',
       aiHint: 'physiotherapy exercise'
     },
@@ -103,7 +103,7 @@ export const servicesList: Service[] = [
     description: 'Confidential support for your mental and emotional well-being at home in Delhi NCR.',
     longDescription: 'We provide confidential and compassionate mental health counseling services at your home or online in the Delhi NCR region. Our licensed therapists help you navigate challenges like stress, anxiety, depression, and relationship issues in a safe and supportive environment.',
     image: {
-      src: 'https://picsum.photos/600/400?random=55',
+      src: '/services/counseling.jpg',
       alt: 'A compassionate counselor providing a mental health session.',
       aiHint: 'therapy session'
     },
@@ -119,7 +119,7 @@ export const servicesList: Service[] = [
     description: 'Energy healing to reduce stress, anxiety and promote relaxation, available across Delhi.',
     longDescription: 'Discover deep relaxation and stress relief with our at-home Reiki healing sessions in Delhi. Our certified Reiki masters channel universal life force energy to clear emotional blockages, balance your chakras, and promote emotional and physical healing.',
     image: {
-      src: 'https://picsum.photos/600/400?random=56',
+      src: '/services/reiki.jpg',
       alt: 'A Reiki master performing energy healing on a client in a serene room in Delhi.',
       aiHint: 'reiki therapy'
     },
@@ -135,7 +135,7 @@ export const servicesList: Service[] = [
     description: 'Personalized one-on-one yoga sessions for flexibility, strength, and peace in Delhi NCR.',
     longDescription: 'Our certified private yoga instructors in NCR create personalized yoga routines tailored to your body type, fitness level, and health goals. Whether you want to manage weight, reduce stress, or improve flexibility, we help you achieve your goals safely.',
     image: {
-      src: 'https://picsum.photos/600/400?random=57',
+      src: '/services/yoga.jpg',
       alt: 'A person practicing yoga with a private instructor in their living room in Noida.',
       aiHint: 'yoga pose'
     },
@@ -152,7 +152,7 @@ export const servicesList: Service[] = [
     description: 'Personalized diet plans for weight management, and therapeutic nutrition in Delhi NCR.',
     longDescription: 'Achieve your health and wellness goals with our expert diet and nutrition counseling. Our certified nutritionists provide personalized meal plans for weight management, sports nutrition, and managing health conditions like diabetes and PCOS at your home.',
     image: {
-      src: 'https://picsum.photos/600/400?random=58',
+      src: '/services/nutrition.jpg',
       alt: 'A display of healthy food for diet and nutrition consultation.',
       aiHint: 'healthy food'
     },
@@ -171,7 +171,7 @@ export const servicesList: Service[] = [
     description: 'Acupressure, acupuncture, and cupping for targeted relief at your home in Gurgaon.',
     longDescription: 'We offer Traditional Chinese Medicine (TCM) therapies like acupuncture, acupressure, and cupping at your home in Gurgaon and across NCR. These ancient techniques are effective for chronic pain management, stress reduction, and overall wellness.',
     image: {
-      src: 'https://picsum.photos/600/400?random=59',
+      src: '/services/tcm.jpg',
       alt: 'A client receiving a TCM therapy session at their home in Gurgaon.',
       aiHint: 'tcm treatment'
     },
@@ -187,7 +187,7 @@ export const servicesList: Service[] = [
     description: 'Therapeutic and relaxation massage to soothe muscles and calm the mind in Delhi NCR.',
     longDescription: 'Indulge in a rejuvenating natural massage at your Delhi NCR home. Our therapists use a blend of aromatic oils and therapeutic techniques to relieve muscle soreness, improve circulation, reduce stress, and promote a state of deep relaxation.',
     image: {
-      src: 'https://picsum.photos/600/400?random=60',
+      src: '/services/massage.jpg',
       alt: 'A person enjoying a relaxing back massage in a comfortable home setting in Delhi NCR.',
       aiHint: 'therapeutic massage'
     },
@@ -203,7 +203,7 @@ export const servicesList: Service[] = [
     description: 'Expert wellness advice accessible from anywhere in Delhi, NCR, or across India.',
     longDescription: 'Connect with our top wellness experts from the comfort of your home, no matter where you are. Our online consultations provide you with the same level of expert care and personalized advice as our in-person visits for conditions that can be managed remotely.',
     image: {
-      src: 'https://picsum.photos/600/400?random=61',
+      src: '/services/online.jpg',
       alt: 'A doctor providing an online consultation via video call.',
       aiHint: 'online doctor'
     },
