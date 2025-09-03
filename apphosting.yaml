@@ -1,0 +1,23 @@
+# Settings to manage and configure a Firebase App Hosting backend.
+# https://firebase.google.com/docs/app-hosting/configure
+
+runConfig:
+  # Increase this value if you'd like to automatically spin up
+  # more instances in response to increased traffic.
+  maxInstances: 2
+
+# In order to build and serve your Next.js application, we need to know
+# where your source code is and how to build it.
+build:
+  # You can specify a script from your package.json to build your app.
+  # If you do, you do not need to specify a buildCommand.
+  # buildScript: build
+
+  # Alternatively, you can specify a command to build your app.
+  buildCommand: npm run build
+
+# This is the command that starts your application.
+# NEXT_PORT is a reserved environment variable from App Hosting.
+# When you specify a command, App Hosting will automatically pass in the
+# port that your application should listen on.
+command: npm run start

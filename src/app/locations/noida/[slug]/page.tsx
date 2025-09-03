@@ -1,0 +1,98 @@
+
+import { locations, SubLocation } from '@/lib/locations';
+import { notFound } from 'next/navigation';
+import Image from 'next/image';
+import { Metadata } from 'next';
+import Header from '@/components/common/Header';
+import Footer from '@/components/common/Footer';
+import Services from '@/components/home/Services';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+
+type Props = {
+  params: { slug: string }
+}
+
+const noidaData = locations.find(l => l.slug === 'noida');
+const subLocations = noidaData?.subLocations || [];
+
+export async function generateMetadata(
+  { params }: Props
+): Promise<Metadata> {
+  const subLocation = subLocations.find(l => l.slug === params.slug);
+
+  if (!subLocation) {
+    return {
+      title: 'Area Not Served',
+    };
+  }
+
+  return {
+    title: `At-Home Physiotherapy in ${subLocation.name}, Noida | WellnessHub`,
+    description: `Get expert doctor visits and at-home physiotherapy in ${subLocation.name}. We offer a range of wellness services to residents of ${subLocation.name}, Noida. Book your session today.`,
+  }
+}
+
+export async function generateStaticParams() {
+  return subLocations.map((location) => ({
+    slug: location.slug,
+  }))
+}
+
+const NoidaSubLocationPage = ({ params }: { params: { slug: string } }) => {
+  const subLocation = subLocations.find(l => l.slug === params.slug);
+
+  if (!subLocation || !noidaData) {
+    notFound();
+  }
+
+  return (
+    <div className="flex min-h-screen flex-col">
+      <Header />
+      <main className="flex-1">
+        <section className="py-12 md:py-20 bg-secondary">
+          <div className="container">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+              <div>
+                <p className="text-primary font-semibold">Noida / {subLocation.name}</p>
+                <h1 className="text-3xl md:text-5xl font-bold font-headline mb-4">Doctor Visit at Home in {subLocation.name}</h1>
+                <p className="text-lg md:text-xl text-muted-foreground">
+                    Get professional, compassionate care from certified practitioners in {subLocation.name}. We bring a range of wellness services, including physiotherapy and expert consultations, right to your doorstep.
+                </p>
+                 <Button asChild size="lg" className="mt-6">
+                  <Link href="/book-now">Book a Home Visit in {subLocation.name}</Link>
+                </Button>
+              </div>
+               <div className="relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src={noidaData.image.src}
+                  alt={`At-home wellness services in ${subLocation.name}, Noida`}
+                  data-ai-hint={noidaData.image.aiHint}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <Services />
+
+         <section className="py-16 lg:py-24 text-center bg-background">
+            <div className="container">
+                <h2 className="text-3xl font-bold font-headline mb-4">Get Wellness Delivered to Your Doorstep in {subLocation.name}</h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+                   Ready to experience the best at-home wellness care? Book your appointment in {subLocation.name} today and let our certified experts come to you.
+                </p>
+                <Button asChild size="lg">
+                    <Link href="/book-now">Schedule Your Visit in {subLocation.name}</Link>
+                </Button>
+            </div>
+        </section>
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default NoidaSubLocationPage;
