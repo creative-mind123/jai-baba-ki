@@ -86,7 +86,7 @@ export const servicesList: Service[] = [
     description: 'Expert home-visit physiotherapy in Delhi NCR for pain relief, mobility, and post-surgery rehabilitation.',
     longDescription: 'Get expert physiotherapy care in the comfort of your home in Delhi NCR. Our certified physiotherapists specialize in post-surgery rehab, stroke recovery, sports injuries, arthritis, and chronic pain management, using advanced techniques for a speedy recovery.',
     image: {
-      src: '/services/physiotherapy.jpg',
+      src: '/physiotherapy.jpg',
       alt: 'A physiotherapist assisting a patient with mobility exercises in their Delhi NCR home.',
       aiHint: 'physiotherapy exercise'
     },
