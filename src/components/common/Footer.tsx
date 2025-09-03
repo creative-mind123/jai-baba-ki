@@ -17,7 +17,7 @@ export default function Footer() {
                  </Link>
                  <p className="text-muted-foreground text-sm">Your trusted partner for integrated wellness services right at your doorstep.</p>
                  <div className="flex gap-4">
-                    <Link href="#" aria-label="Facebook" rel="noopener noreferrer nofollow" target="_blank">
+                    <Link href="https://www.facebook.com/bioremedies.icbr/" aria-label="Facebook" rel="noopener noreferrer nofollow" target="_blank">
                     <Facebook className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
                     </Link>
                     <Link href="#" aria-label="Instagram" rel="noopener noreferrer nofollow" target="_blank">
