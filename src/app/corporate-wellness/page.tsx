@@ -66,7 +66,7 @@ export default function CorporateWellnessPage() {
       <main className="flex-1">
         <section className="relative py-20 md:py-32 flex items-center text-center bg-secondary/50">
              <Image
-                src="https://picsum.photos/1200/800"
+                src="/corporate%20wellness.png"
                 alt="A diverse group of office employees participating in a yoga and wellness session"
                 data-ai-hint="corporate wellness"
                 fill
