@@ -20,7 +20,7 @@ export default function Footer() {
                     <Link href="https://www.facebook.com/bioremedies.icbr/" aria-label="Facebook" rel="noopener noreferrer nofollow" target="_blank">
                     <Facebook className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
                     </Link>
-                    <Link href="#" aria-label="Instagram" rel="noopener noreferrer nofollow" target="_blank">
+                    <Link href="https://www.instagram.com/bio_remedies/" aria-label="Instagram" rel="noopener noreferrer nofollow" target="_blank">
                     <Instagram className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
                     </Link>
                 </div>
