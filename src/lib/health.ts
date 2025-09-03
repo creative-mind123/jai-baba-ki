@@ -22,7 +22,7 @@ const stressAndAnxietyRelatedIssues: HealthIssue[] = [
     slug: "separation-anxiety-disorder-ncr",
     description: "Coping strategies and support for overwhelming fear when separated from loved ones. At-home counseling available in Delhi NCR.",
     image: {
-      src: "https://picsum.photos/600/400?random=11",
+      src: "/home/user/studio/public/emotinal health.jpeg",
       alt: "A child holding a parent's hand, symbolizing separation anxiety.",
       aiHint: "child sad"
     },
