@@ -65,7 +65,7 @@ const NoidaSubLocationPage = ({ params }: { params: { slug: string } }) => {
               </div>
                <div className="relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src={noidaData.image.src}
+                  src={noidaData.image.src.replace(/ /g, '%20')}
                   alt={`At-home wellness services in ${subLocation.name}, Noida`}
                   data-ai-hint={noidaData.image.aiHint}
                   fill

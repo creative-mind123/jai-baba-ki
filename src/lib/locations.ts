@@ -1,3 +1,4 @@
+
 import { FAQItem } from "./faq";
 
 export type SubLocation = {
@@ -24,7 +25,7 @@ export const locations: Location[] = [
     slug: "delhi",
     description: "Comprehensive home wellness services across all of Delhi. From North to South Delhi, our experts are ready to bring physiotherapy, yoga, and holistic health to your doorstep.",
     image: {
-      src: 'https://picsum.photos/600/400?random=41',
+      src: '/doctor at home.png',
       alt: 'Doctor providing at-home wellness services in Delhi.',
       aiHint: 'doctor home'
     },
@@ -69,7 +70,7 @@ export const locations: Location[] = [
     slug: "gurgaon",
     description: "Serving the corporate hub of Gurgaon with at-home wellness solutions designed for a busy lifestyle. De-stress and rejuvenate with our expert yoga and massage therapists after a long day.",
     image: {
-      src: 'https://picsum.photos/600/400?random=42',
+      src: '/docotors knowking door.png',
       alt: 'Doctor knocking on a door for a home visit in Gurgaon.',
       aiHint: 'doctor visit'
     },
@@ -95,7 +96,7 @@ export const locations: Location[] = [
     slug: "noida",
     description: "Bringing our full range of wellness services to the planned city of Noida. Experience personalized physiotherapy and naturopathy in the comfort of your home.",
     image: {
-      src: 'https://picsum.photos/600/400?random=43',
+      src: '/doctor at home.png',
       alt: 'Doctor providing at-home wellness services in Noida.',
       aiHint: 'doctor home'
     },
@@ -127,7 +128,7 @@ export const locations: Location[] = [
     slug: "faridabad",
     description: "Extending our expert at-home wellness care to the residents of Faridabad. Get access to the best alternative therapies without leaving your home.",
     image: {
-      src: 'https://picsum.photos/600/400?random=44',
+      src: '/docotors knowking door.png',
       alt: 'Doctor knocking on a door for a home visit in Faridabad.',
       aiHint: 'doctor visit'
     },
@@ -141,7 +142,7 @@ export const locations: Location[] = [
     slug: "ghaziabad",
     description: "Our dedicated team is available in Ghaziabad to provide top-quality wellness services. From yoga to physiotherapy, we cover all your health needs at home.",
     image: {
-      src: 'https://picsum.photos/600/400?random=45',
+      src: '/doctor at home.png',
       alt: 'Doctor providing at-home wellness services in Ghaziabad.',
       aiHint: 'doctor home'
     },
