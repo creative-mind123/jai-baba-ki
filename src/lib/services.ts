@@ -203,7 +203,7 @@ export const servicesList: Service[] = [
     description: 'Expert wellness advice accessible from anywhere in Delhi, NCR, or across India.',
     longDescription: 'Connect with our top wellness experts from the comfort of your home, no matter where you are. Our online consultations provide you with the same level of expert care and personalized advice as our in-person visits for conditions that can be managed remotely.',
     image: {
-      src: '/services/online.jpg',
+      src: '/online-doctor.png',
       alt: 'A doctor providing an online consultation via video call.',
       aiHint: 'online doctor'
     },
