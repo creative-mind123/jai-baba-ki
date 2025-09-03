@@ -187,9 +187,9 @@ export const servicesList: Service[] = [
     description: 'Therapeutic and relaxation massage to soothe muscles and calm the mind in Delhi NCR.',
     longDescription: 'Indulge in a rejuvenating natural massage at your Delhi NCR home. Our therapists use a blend of aromatic oils and therapeutic techniques to relieve muscle soreness, improve circulation, reduce stress, and promote a state of deep relaxation.',
     image: {
-      src: '/services/massage.jpg',
+      src: '/massage.jpg',
       alt: 'A person enjoying a relaxing back massage in a comfortable home setting in Delhi NCR.',
-aiHint: 'therapeutic massage'
+      aiHint: 'therapeutic massage'
     },
      faq: [
         { question: 'What type of massage is best for stress relief?', answer: 'For stress relief, we recommend a Swedish or Aromatherapy massage. Discuss your needs with our therapist upon their arrival in your Delhi NCR home to choose the best option for you.' },
