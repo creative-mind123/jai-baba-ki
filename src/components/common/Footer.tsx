@@ -4,6 +4,29 @@ import Link from 'next/link';
 import IcbrLogo from './IcbrLogo';
 import { healthIssues } from '@/lib/health';
 
+const PinterestIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        width="24" 
+        height="24" 
+        viewBox="0 0 24 24" 
+        fill="none" 
+        stroke="currentColor" 
+        strokeWidth="2" 
+        strokeLinecap="round" 
+        strokeLinejoin="round" 
+        {...props}
+    >
+        <path d="M12.5 12a5.5 5.5 0 1 0-5.5 5.5c.6 0 1.2-.1 1.7-.4l1.2 1.2c-.3.4-.6.8-.8 1.2H12a10 10 0 1 0-1.2-4.5L9.5 16H8a2 2 0 0 0-2 2v2M18 6l-3 3"/>
+        <path d="M13 11l4-4"/>
+        <path d="m9 15 2.5 2.5"/>
+        <path d="M15 9.5c.6-.6 1.4-1 2.5-1s1.9.4 2.5 1"/>
+        <path d="m20 14-.5.5"/>
+        <path d="M7 11a5.5 5.5 0 0 0-1.4 10.7c.5.2.9.3 1.4.3h.5"/>
+        <path d="M17 11a5.5 5.5 0 0 0-1.4 10.7c.5.2.9.3 1.4.3h.5"/>
+    </svg>
+)
+
 export default function Footer() {
   const mainHealthIssues = healthIssues.filter(issue => !issue.slug.includes('back-') || issue.slug === 'back-pain-relief-delhi-ncr');
 
@@ -25,6 +48,9 @@ export default function Footer() {
                     </Link>
                     <Link href="https://www.youtube.com/@ICBRBIO-REDIES" aria-label="YouTube" rel="noopener noreferrer nofollow" target="_blank">
                     <Youtube className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
+                    </Link>
+                    <Link href="https://in.pinterest.com/icbrwellness/?actingBusinessId=1019995153013908463" aria-label="Pinterest" rel="noopener noreferrer nofollow" target="_blank">
+                    <PinterestIcon className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
                     </Link>
                 </div>
             </div>
