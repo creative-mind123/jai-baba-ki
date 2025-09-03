@@ -1,5 +1,5 @@
 
-import { Twitter, Facebook, Instagram } from 'lucide-react';
+import { Facebook, Instagram } from 'lucide-react';
 import Link from 'next/link';
 import IcbrLogo from './IcbrLogo';
 import { healthIssues } from '@/lib/health';
@@ -17,9 +17,6 @@ export default function Footer() {
                  </Link>
                  <p className="text-muted-foreground text-sm">Your trusted partner for integrated wellness services right at your doorstep.</p>
                  <div className="flex gap-4">
-                    <Link href="#" aria-label="Twitter" rel="noopener noreferrer nofollow" target="_blank">
-                    <Twitter className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
-                    </Link>
                     <Link href="#" aria-label="Facebook" rel="noopener noreferrer nofollow" target="_blank">
                     <Facebook className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
                     </Link>
