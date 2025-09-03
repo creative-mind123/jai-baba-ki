@@ -119,7 +119,7 @@ export const servicesList: Service[] = [
     description: 'Energy healing to reduce stress, anxiety and promote relaxation, available across Delhi.',
     longDescription: 'Discover deep relaxation and stress relief with our at-home Reiki healing sessions in Delhi. Our certified Reiki masters channel universal life force energy to clear emotional blockages, balance your chakras, and promote emotional and physical healing.',
     image: {
-      src: '/services/reiki.jpg',
+      src: '/reki.jpg',
       alt: 'A Reiki master performing energy healing on a client in a serene room in Delhi.',
       aiHint: 'reiki therapy'
     },
