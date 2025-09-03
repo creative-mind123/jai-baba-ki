@@ -135,7 +135,7 @@ export const servicesList: Service[] = [
     description: 'Personalized one-on-one yoga sessions for flexibility, strength, and peace in Delhi NCR.',
     longDescription: 'Our certified private yoga instructors in NCR create personalized yoga routines tailored to your body type, fitness level, and health goals. Whether you want to manage weight, reduce stress, or improve flexibility, we help you achieve your goals safely.',
     image: {
-      src: '/services/yoga.jpg',
+      src: '/home/user/studio/public/yoga.jpg',
       alt: 'A person practicing yoga with a private instructor in their living room in Noida.',
       aiHint: 'yoga pose'
     },
@@ -152,7 +152,7 @@ export const servicesList: Service[] = [
     description: 'Personalized diet plans for weight management, and therapeutic nutrition in Delhi NCR.',
     longDescription: 'Achieve your health and wellness goals with our expert diet and nutrition counseling. Our certified nutritionists provide personalized meal plans for weight management, sports nutrition, and managing health conditions like diabetes and PCOS at your home.',
     image: {
-      src: '/services/nutrition.jpg',
+      src: '/home/user/studio/public/nutrition.webp',
       alt: 'A display of healthy food for diet and nutrition consultation.',
       aiHint: 'healthy food'
     },
