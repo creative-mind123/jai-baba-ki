@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/toaster";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
+import PhoneButton from "@/components/common/PhoneButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={cn("min-h-screen bg-background font-sans antialiased", inter.className)}>
         {children}
         <WhatsAppButton />
+        <PhoneButton />
         <Toaster />
       </body>
     </html>
