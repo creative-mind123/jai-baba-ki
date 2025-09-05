@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { TrendingUp, Smile, UserMinus, HeartHandshake, Leaf, Wind, ShieldCheck, Waves } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Metadata } from 'next';
+import IcbrLogo from '@/components/common/IcbrLogo';
 
 export const metadata: Metadata = {
   title: 'Corporate Wellness Programs in Delhi NCR | ICBR',
@@ -74,6 +75,9 @@ export default function CorporateWellnessPage() {
                 priority
             />
             <div className="container text-primary-foreground px-4">
+                <div className="flex justify-center mb-4">
+                  <IcbrLogo className="h-14" />
+                </div>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-headline font-bold drop-shadow-sm">
                     Invest in Your Team's Well-being, Invest in Your Success.
                 </h1>
