@@ -139,7 +139,7 @@ export const servicesList: Service[] = [
       alt: 'A person practicing yoga with a #1 private instructor in their living room in Noida.',
       aiHint: 'yoga pose'
     },
-    youtubeVideoId: '412234371',
+    youtubeVideoId: 'SneAk29t4o0',
     faq: [
         { question: 'I have never done yoga before. Is a #1 private instructor at home in Delhi NCR right for me?', answer: 'Absolutely! Our #1 private instructors in the NCR region specialize in creating tailored programs for beginners, ensuring you learn with proper form and at your own pace.' },
         { question: 'What style of yoga do you teach for #1 weight loss results in Delhi NCR?', answer: 'For #1 weight management, our instructors often focus on dynamic styles like Vinyasa and Power Yoga. However, the plan is always customized to your specific needs and fitness level.' }
