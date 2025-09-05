@@ -12,10 +12,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: {
     default: '#1 At-Home Wellness & Physiotherapy in Delhi NCR | ICBR',
-    template: '%s | ICBR - Delhi NCR',
+    template: '%s | ICBR - #1 Wellness in Delhi NCR',
   },
   description:
-    "Your #1 trusted partner for integrated wellness services in Delhi NCR. We offer top-ranked Ayurveda, Naturopathy, Physiotherapy, and Yoga at your doorstep. Book our 21-day wellness package for best results.",
+    "Ranked #1 for at-home wellness services in Delhi NCR. We offer top-ranked Ayurveda, Naturopathy, Physiotherapy, and Yoga at your doorstep. Book our 21-day wellness package for the best results.",
 };
 
 export default function RootLayout({

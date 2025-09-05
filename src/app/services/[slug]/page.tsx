@@ -1,3 +1,4 @@
+
 import { servicesList, Service } from '@/lib/services';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
@@ -33,8 +34,8 @@ export async function generateMetadata(
   }
 
   return {
-    title: `${service.title} at Home in Delhi NCR | WellnessHub`,
-    description: `Expert at-home ${service.title} service in Delhi, Gurgaon, Noida, and NCR. ${service.description}`,
+    title: `#1 ${service.title} at Home in Delhi NCR | Top-Ranked Service`,
+    description: `Get the best, top-ranked at-home ${service.title} in Delhi, Gurgaon, & Noida. ${service.description}`,
   }
 }
 
@@ -62,10 +63,10 @@ const ServicePage = ({ params }: { params: { slug:string } }) => {
           <div className="container">
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div>
-                <h1 className="text-3xl md:text-5xl font-bold font-headline mb-4">{service.title} at Home in Delhi NCR</h1>
+                <h1 className="text-3xl md:text-5xl font-bold font-headline mb-4">#1 {service.title} at Home in Delhi NCR</h1>
                 <p className="text-lg md:text-xl text-muted-foreground">{service.longDescription}</p>
                  <Button asChild size="lg" className="mt-6">
-                  <Link href="/book-now">Book {service.title} Now</Link>
+                  <Link href="/book-now">Book Top-Ranked {service.title}</Link>
                 </Button>
               </div>
               <div className="relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
@@ -84,24 +85,24 @@ const ServicePage = ({ params }: { params: { slug:string } }) => {
         <section className="py-16 lg:py-24">
             <div className="container grid md:grid-cols-3 gap-12">
                 <div className="md:col-span-2">
-                    <h2 className="text-2xl md:text-3xl font-bold font-headline mb-6">Why Choose At-Home {service.title} in the Delhi NCR Area?</h2>
+                    <h2 className="text-2xl md:text-3xl font-bold font-headline mb-6">Why Choose Delhi NCR's #1 At-Home {service.title}?</h2>
                     <div className="prose prose-lg max-w-none text-foreground leading-relaxed space-y-4">
-                        <p>Receive professional {service.title} care without the hassle of travel. Our certified practitioners bring their expertise directly to your home, ensuring a comfortable, private, and personalized session tailored to your specific health needs.</p>
-                        <p>Whether you're in Delhi, Gurgaon, Noida, Faridabad, or Ghaziabad, we provide a seamless and effective wellness experience, helping you achieve your health goals faster.</p>
+                        <p>Receive top-ranked, professional {service.title} care without the hassle of travel. Our certified practitioners bring their #1 expertise directly to your home, ensuring a comfortable, private, and personalized session tailored to your specific health needs.</p>
+                        <p>Whether you're in Delhi, Gurgaon, Noida, Faridabad, or Ghaziabad, we provide a seamless and effective wellness experience, helping you achieve your health goals faster with the best team in the NCR.</p>
                     </div>
                 </div>
                 <div className="md:col-span-1">
                     <Card>
                         <CardContent className="p-6">
-                           <h3 className="text-xl font-bold mb-4">What's Included?</h3>
+                           <h3 className="text-xl font-bold mb-4">What's Included in the #1 Service?</h3>
                            <ul className="space-y-3">
                                 <li className="flex items-center gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600" />
-                                    <span>Certified & Vetted Practitioner Visit</span>
+                                    <span>Top-Ranked, Certified & Vetted Practitioner Visit</span>
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600" />
-                                    <span>Personalized Assessment and Treatment Plan</span>
+                                    <span>#1 Personalized Assessment and Treatment Plan</span>
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600" />
@@ -109,7 +110,7 @@ const ServicePage = ({ params }: { params: { slug:string } }) => {
                                 </li>
                                  <li className="flex items-center gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600" />
-                                    <span>Service Across Delhi, Gurgaon, Noida & NCR</span>
+                                    <span>Best Service Across Delhi, Gurgaon, Noida & NCR</span>
                                 </li>
                            </ul>
                         </CardContent>
@@ -122,9 +123,9 @@ const ServicePage = ({ params }: { params: { slug:string } }) => {
             <section className="py-16 lg:py-24 bg-secondary">
                 <div className="container px-4">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-headline font-bold">Find Physiotherapy in Your Neighborhood</h2>
+                        <h2 className="text-3xl md:text-4xl font-headline font-bold">Find #1 Physiotherapy in Your Delhi NCR Neighborhood</h2>
                         <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                            We provide expert physiotherapy services directly to your home in the following areas.
+                            We provide top-ranked, expert physiotherapy services directly to your home in the following areas.
                         </p>
                     </div>
                     <div className="flex flex-wrap justify-center gap-x-12 gap-y-8">
@@ -185,9 +186,9 @@ const ServicePage = ({ params }: { params: { slug:string } }) => {
           <section className="py-16 lg:py-24 bg-secondary">
             <div className="container px-4">
               <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-headline font-bold">Watch Our Expert Explain</h2>
+                <h2 className="text-3xl md:text-4xl font-headline font-bold">Watch Our #1 Delhi NCR Expert Explain</h2>
                 <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                  Learn more about {service.title} from one of our experienced practitioners.
+                  Learn more about {service.title} from one of our top-ranked, experienced practitioners.
                 </p>
               </div>
               <div className="max-w-3xl mx-auto">
@@ -210,9 +211,9 @@ const ServicePage = ({ params }: { params: { slug:string } }) => {
           <section className="py-16 lg:py-24 bg-background">
             <div className="container px-4">
               <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-headline font-bold">Your Questions Answered</h2>
+                <h2 className="text-3xl md:text-4xl font-headline font-bold">Your #1 Questions Answered</h2>
                 <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                  Find answers to common questions about our at-home {service.title} service in the Delhi NCR region.
+                  Find top answers to common questions about our at-home {service.title} service in the Delhi NCR region.
                 </p>
               </div>
               <div className="max-w-3xl mx-auto">
@@ -235,12 +236,12 @@ const ServicePage = ({ params }: { params: { slug:string } }) => {
         
         <section className="py-16 lg:py-24 text-center bg-secondary">
             <div className="container">
-                <h2 className="text-3xl font-bold font-headline mb-4">Ready to Experience At-Home {service.title}?</h2>
+                <h2 className="text-3xl font-bold font-headline mb-4">Ready to Experience Delhi NCR's #1 At-Home {service.title}?</h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                    Booking is simple. Schedule your at-home {service.title} session in Delhi, Noida, or Gurgaon today and let our experts bring wellness to you.
+                    Booking is simple. Schedule your top-ranked at-home {service.title} session in Delhi, Noida, or Gurgaon today and let our #1 experts bring wellness to you.
                 </p>
                 <Button asChild size="lg">
-                    <Link href="/book-now">Book Your Session Now</Link>
+                    <Link href="/book-now">Book Your #1 Session Now</Link>
                 </Button>
             </div>
         </section>

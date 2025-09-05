@@ -1,11 +1,12 @@
+
 import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
 import FAQ from '@/components/home/FAQ';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Frequently Asked Questions | WellnessHub Delhi NCR',
-  description: 'Find answers to common questions about our at-home wellness services in Delhi, Gurgaon, Noida, and the entire NCR. Learn about our services, booking process, and practitioners.',
+  title: 'FAQ - #1 At-Home Wellness in Delhi NCR | ICBR',
+  description: 'Find answers to common questions about our #1 ranked at-home wellness services in Delhi, Gurgaon, Noida, and the entire NCR. Learn about our top-ranked services, booking process, and practitioners.',
 };
 
 export default function FAQPage() {

@@ -1,3 +1,4 @@
+
 import { healthIssues, HealthIssue } from '@/lib/health';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
@@ -32,8 +33,8 @@ export async function generateMetadata(
   }
 
   return {
-    title: `At-Home Treatment for ${issue.title} in Delhi NCR | WellnessHub`,
-    description: `Find relief and management for ${issue.title} with our at-home wellness services in the Delhi NCR area. ${issue.description}`,
+    title: `#1 At-Home Treatment for ${issue.title} in Delhi NCR | ICBR`,
+    description: `Get top-ranked relief and management for ${issue.title} with our #1 at-home wellness services in Delhi, Gurgaon & Noida. ${issue.description}`,
   }
 }
 
@@ -67,10 +68,10 @@ const HealthIssuePage = ({ params }: { params: { slug: string } }) => {
           <div className="container">
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div>
-                <h1 className="text-3xl md:text-5xl font-bold font-headline mb-4">Managing {issue.title} with At-Home Care in Delhi NCR</h1>
+                <h1 className="text-3xl md:text-5xl font-bold font-headline mb-4">#1 At-Home Care for {issue.title} in Delhi NCR</h1>
                 <p className="text-lg md:text-xl text-muted-foreground">{issue.description}</p>
                  <Button asChild size="lg" className="mt-6">
-                  <Link href="/book-now">Book a Personalized Session</Link>
+                  <Link href="/book-now">Book a #1 Personalized Session</Link>
                 </Button>
               </div>
                <div className="relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
@@ -88,7 +89,7 @@ const HealthIssuePage = ({ params }: { params: { slug: string } }) => {
 
         <section className="py-16 lg:py-24">
             <div className="container">
-                <h2 className="text-2xl md:text-3xl font-bold font-headline mb-8 text-center">Recommended At-Home Services for {issue.title}</h2>
+                <h2 className="text-2xl md:text-3xl font-bold font-headline mb-8 text-center">Top Recommended At-Home Services for {issue.title}</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {relevantServices.length > 0 ? relevantServices.map((service) => (
                     <Card key={service.title} className="text-center group hover:shadow-lg transition-shadow duration-300 flex flex-col">
@@ -115,9 +116,9 @@ const HealthIssuePage = ({ params }: { params: { slug: string } }) => {
           <section className="py-16 lg:py-24 bg-secondary">
             <div className="container px-4">
               <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-headline font-bold">Explore Specific Related Conditions</h2>
+                <h2 className="text-3xl md:text-4xl font-headline font-bold">Explore Specific Related Conditions in Delhi NCR</h2>
                 <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                  Learn more about specific conditions related to {issue.title} and how we can help manage them at home.
+                  Learn more about specific conditions related to {issue.title} and how our #1 ranked team can help manage them at home.
                 </p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -141,9 +142,9 @@ const HealthIssuePage = ({ params }: { params: { slug: string } }) => {
           <section className="py-16 lg:py-24 bg-background">
             <div className="container px-4">
               <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-headline font-bold">Watch Our Expert Explain</h2>
+                <h2 className="text-3xl md:text-4xl font-headline font-bold">Watch Our #1 Delhi NCR Expert Explain</h2>
                 <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                  Learn more about managing {issue.title} from one of our experienced practitioners.
+                  Learn more about managing {issue.title} from one of our top-ranked practitioners.
                 </p>
               </div>
               <div className="max-w-3xl mx-auto">
@@ -166,9 +167,9 @@ const HealthIssuePage = ({ params }: { params: { slug: string } }) => {
           <section className="py-16 lg:py-24 bg-secondary">
             <div className="container px-4">
               <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-headline font-bold">Solutions & Answers for {issue.title}</h2>
+                <h2 className="text-3xl md:text-4xl font-headline font-bold">Top Solutions & Answers for {issue.title} in Delhi NCR</h2>
                 <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                  Learn how alternative treatments can help you manage {issue.title} from your home in Delhi, Gurgaon, or Noida.
+                  Learn how our #1 ranked alternative treatments can help you manage {issue.title} from your home in Delhi, Gurgaon, or Noida.
                 </p>
               </div>
               <div className="max-w-3xl mx-auto">
@@ -191,12 +192,12 @@ const HealthIssuePage = ({ params }: { params: { slug: string } }) => {
 
         <section className="py-16 lg:py-24 text-center bg-background">
             <div className="container">
-                <h2 className="text-3xl font-bold font-headline mb-4">Ready to Find Relief from {issue.title}?</h2>
+                <h2 className="text-3xl font-bold font-headline mb-4">Ready to Find Relief from {issue.title}? Rank Your Health #1</h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                    Don't let {issue.title} hold you back. Our team is ready to create a personalized, at-home treatment plan for you in the Delhi NCR area.
+                    Don't let {issue.title} hold you back. Our #1 team is ready to create a personalized, at-home treatment plan for you in the Delhi NCR area.
                 </p>
                 <Button asChild size="lg">
-                    <Link href="/book-now">Book Your Consultation Today</Link>
+                    <Link href="/book-now">Book Your #1 Consultation Today</Link>
                 </Button>
             </div>
         </section>

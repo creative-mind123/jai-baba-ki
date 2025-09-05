@@ -1,3 +1,4 @@
+
 import { locations, Location } from '@/lib/locations';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
@@ -32,8 +33,8 @@ export async function generateMetadata(
   }
 
   return {
-    title: `At-Home Wellness & Physiotherapy in ${location.name} | WellnessHub`,
-    description: `Get expert at-home wellness services in ${location.name}. We offer physiotherapy, yoga, Ayurveda and more to residents of ${location.name}. Book your session today.`,
+    title: `#1 At-Home Wellness & Physiotherapy in ${location.name} | ICBR`,
+    description: `Get top-ranked, expert at-home wellness services in ${location.name}. We are the #1 provider of physiotherapy, yoga, & Ayurveda for residents of ${location.name}. Book your session today.`,
   }
 }
 
@@ -65,10 +66,10 @@ const LocationPage = ({ params }: { params: { slug: string } }) => {
           <div className="container">
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div>
-                <h1 className="text-3xl md:text-5xl font-bold font-headline mb-4">At-Home Wellness Services in {location.name}</h1>
+                <h1 className="text-3xl md:text-5xl font-bold font-headline mb-4">#1 At-Home Wellness Services in {location.name}</h1>
                 <p className="text-lg md:text-xl text-muted-foreground">{location.description}</p>
                  <Button asChild size="lg" className="mt-6">
-                  <Link href="/book-now">Book a Home Visit in {location.name}</Link>
+                  <Link href="/book-now">Book a #1 Home Visit in {location.name}</Link>
                 </Button>
               </div>
                <div className="relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
@@ -90,9 +91,9 @@ const LocationPage = ({ params }: { params: { slug: string } }) => {
           <section className="py-16 lg:py-24 bg-secondary">
             <div className="container px-4">
               <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-headline font-bold">Local Service FAQs for {location.name}</h2>
+                <h2 className="text-3xl md:text-4xl font-headline font-bold">Top Local Service FAQs for {location.name}</h2>
                 <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                  Common questions about receiving our at-home wellness services in the {location.name} area.
+                  Common questions about receiving our #1 ranked at-home wellness services in the {location.name} area.
                 </p>
               </div>
               <div className="max-w-3xl mx-auto">
@@ -115,12 +116,12 @@ const LocationPage = ({ params }: { params: { slug: string } }) => {
 
          <section className="py-16 lg:py-24 text-center bg-background">
             <div className="container">
-                <h2 className="text-3xl font-bold font-headline mb-4">Get Wellness Delivered to Your Doorstep in {location.name}</h2>
+                <h2 className="text-3xl font-bold font-headline mb-4">Get #1 Wellness Delivered to Your Doorstep in {location.name}</h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                   Ready to experience the best at-home wellness care? Book your appointment in {location.name} today and let our certified experts come to you.
+                   Ready to experience the best at-home wellness care in Delhi NCR? Book your appointment in {location.name} today and let our #1 certified experts come to you.
                 </p>
                 <Button asChild size="lg">
-                    <Link href="/book-now">Schedule Your Visit in {location.name}</Link>
+                    <Link href="/book-now">Schedule Your #1 Visit in {location.name}</Link>
                 </Button>
             </div>
         </section>

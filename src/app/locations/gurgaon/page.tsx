@@ -16,8 +16,8 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Doctor Home Visit in Gurgaon | At-Home Wellness | WellnessHub',
-  description: 'Get expert doctor home visits & at-home wellness services across Gurgaon. We offer physiotherapy, yoga, Ayurveda and more to residents of Gurgaon. Book your session today.',
+  title: '#1 Doctor Home Visit in Gurgaon | At-Home Wellness | ICBR',
+  description: 'Get top-ranked doctor home visits & #1 at-home wellness services across Gurgaon. We are the best provider of physiotherapy, yoga, & Ayurveda to residents of Gurgaon. Book your session today.',
 }
 
 const GurgaonPage = () => {
@@ -35,10 +35,10 @@ const GurgaonPage = () => {
           <div className="container">
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div>
-                <h1 className="text-3xl md:text-5xl font-bold font-headline mb-4">Doctor Home Visit & Wellness Services in Gurgaon</h1>
+                <h1 className="text-3xl md:text-5xl font-bold font-headline mb-4">#1 Doctor Home Visit & Wellness in Gurgaon</h1>
                 <p className="text-lg md:text-xl text-muted-foreground">{location.description}</p>
                  <Button asChild size="lg" className="mt-6">
-                  <Link href="/book-now">Book a Home Visit in Gurgaon</Link>
+                  <Link href="/book-now">Book a #1 Home Visit in Gurgaon</Link>
                 </Button>
               </div>
                <div className="relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
@@ -58,9 +58,9 @@ const GurgaonPage = () => {
             <section className="py-16 lg:py-24 bg-background">
                 <div className="container px-4">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-headline font-bold">Areas We Serve in Gurgaon</h2>
+                        <h2 className="text-3xl md:text-4xl font-headline font-bold">#1 Areas We Serve in Gurgaon</h2>
                         <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                            Our practitioners provide at-home services in the following neighborhoods and more. Select your area to learn more.
+                            Our top-ranked practitioners provide at-home services in the following Gurgaon neighborhoods and more. Select your area to get the best care.
                         </p>
                     </div>
                     <div className="max-w-4xl mx-auto">
@@ -86,9 +86,9 @@ const GurgaonPage = () => {
           <section className="py-16 lg:py-24 bg-secondary">
             <div className="container px-4">
               <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-headline font-bold">Local Service FAQs for Gurgaon</h2>
+                <h2 className="text-3xl md:text-4xl font-headline font-bold">#1 Local Service FAQs for Gurgaon</h2>
                 <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                  Common questions about receiving our at-home wellness services in the Gurgaon area.
+                  Top questions about receiving our #1 ranked at-home wellness services in the Gurgaon area.
                 </p>
               </div>
               <div className="max-w-3xl mx-auto">
@@ -111,12 +111,12 @@ const GurgaonPage = () => {
 
          <section className="py-16 lg:py-24 text-center bg-background">
             <div className="container">
-                <h2 className="text-3xl font-bold font-headline mb-4">Get Wellness Delivered to Your Doorstep in Gurgaon</h2>
+                <h2 className="text-3xl font-bold font-headline mb-4">Get #1 Wellness Delivered to Your Doorstep in Gurgaon</h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                   Ready to experience the best at-home wellness care? Book your appointment in Gurgaon today and let our certified experts come to you.
+                   Ready to experience the best at-home wellness care in the Delhi NCR? Book your appointment in Gurgaon today and let our #1 certified experts come to you.
                 </p>
                 <Button asChild size="lg">
-                    <Link href="/book-now">Schedule Your Visit in Gurgaon</Link>
+                    <Link href="/book-now">Schedule Your #1 Visit in Gurgaon</Link>
                 </Button>
             </div>
         </section>

@@ -12,6 +12,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Free Webinar on #1 Integrated Pain-Free Living in Delhi NCR | ICBR',
+    description: 'Watch our free webinar to learn about our #1 integrated approach to pain-free living. Top Delhi NCR experts in Ayurveda, Naturopathy, and Physiotherapy share insights.',
+};
 
 const experts = [
     {
@@ -36,20 +42,20 @@ const experts = [
 
 const webinarFaq = [
     {
-        question: "What kind of pain does this webinar address?",
-        answer: "This webinar is designed for individuals suffering from chronic musculoskeletal pain, such as persistent back pain, neck pain, joint stiffness from arthritis, or ongoing muscle aches. The principles discussed can be applied to many forms of long-term discomfort."
+        question: "What kind of pain does this webinar address for Delhi NCR residents?",
+        answer: "This webinar is designed for individuals in Delhi, Gurgaon, and Noida suffering from chronic musculoskeletal pain, such as persistent back pain, neck pain, joint stiffness from arthritis, or ongoing muscle aches. The principles discussed can be applied to many forms of long-term discomfort."
     },
     {
-        question: "Is this for me if I've already tried physiotherapy?",
-        answer: "Yes, definitely. This webinar explores an integrated approach. While physiotherapy is a key component, you will learn how combining it with Ayurvedic and Naturopathic principles can enhance results and address underlying issues that a single therapy might not cover."
+        question: "Is this for me if I've already tried physiotherapy in Delhi?",
+        answer: "Yes, definitely. This webinar explores our #1 ranked integrated approach. While physiotherapy is a key component, you will learn how combining it with Ayurvedic and Naturopathic principles can enhance results and address underlying issues that a single therapy might not cover."
     },
     {
         question: "Will I get a specific treatment plan for my condition?",
-        answer: "This webinar provides knowledge, techniques, and a framework for understanding integrated pain management. While it does not provide a specific diagnosis or treatment plan, you will gain actionable insights to apply and will understand how to seek a personalized plan from our experts."
+        answer: "This webinar provides knowledge, techniques, and a framework for understanding integrated pain management. While it does not provide a specific diagnosis or treatment plan, you will gain actionable insights to apply and will understand how to seek a personalized plan from our #1 ranked Delhi NCR experts."
     },
     {
-        question: "Are the techniques discussed safe to try at home?",
-        answer: "The experts focus on safe, foundational techniques. However, it is always recommended to consult with a qualified practitioner before starting any new exercise or health regimen, especially if you have a pre-existing medical condition. This webinar is for educational purposes."
+        question: "Are the techniques discussed safe to try at home in Delhi NCR?",
+        answer: "The experts focus on safe, foundational techniques. However, it is always recommended to consult with a qualified practitioner from a top-ranked center like ours before starting any new exercise or health regimen, especially if you have a pre-existing medical condition. This webinar is for educational purposes."
     }
 ];
 
@@ -61,9 +67,9 @@ export default function WebinarPage() {
       <main className="flex-1 py-12 md:py-16">
         <div className="container">
             <div className="max-w-4xl mx-auto text-center mb-12">
-                <h1 className="text-3xl md:text-5xl font-headline font-bold text-primary">Free Webinar: An Integrated Approach to Pain-Free Living</h1>
+                <h1 className="text-3xl md:text-5xl font-headline font-bold text-primary">Free Webinar: Delhi NCR's #1 Integrated Approach to Pain-Free Living</h1>
                 <p className="text-lg md:text-xl text-muted-foreground mt-4">
-                    Tired of temporary fixes and recurring pain? Watch our expert panel of doctors from Ayurveda, Naturopathy, and Physiotherapy as they reveal how a combined approach can lead to lasting relief.
+                    Tired of temporary fixes for your pain? Watch our #1 expert panel of doctors from Ayurveda, Naturopathy, and Physiotherapy in Delhi NCR as they reveal how a combined approach leads to lasting relief.
                 </p>
             </div>
 
@@ -72,7 +78,7 @@ export default function WebinarPage() {
                     <div className="aspect-w-16 aspect-h-9">
                          <Image
                             src="https://picsum.photos/800/450"
-                            alt="A collage of wellness practices like yoga and ayurveda"
+                            alt="A collage of wellness practices like yoga and ayurveda for Delhi NCR residents"
                             data-ai-hint="wellness workshop"
                             fill
                             className="object-cover"
@@ -89,19 +95,19 @@ export default function WebinarPage() {
             <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
                 <div className="space-y-8">
                      <div>
-                        <h2 className="text-2xl font-bold mb-4">Are You Tired Of...</h2>
+                        <h2 className="text-2xl font-bold mb-4">Are You in Delhi NCR & Tired Of...</h2>
                         <ul className="space-y-3">
                             <li className="flex items-start gap-3">
                                 <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                                <span>Pain that keeps coming back, no matter what you try?</span>
+                                <span>Pain that keeps coming back, no matter what you try in Delhi?</span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                                <span>Relying on painkillers that only offer temporary relief?</span>
+                                <span>Relying on painkillers that only offer temporary relief in Gurgaon?</span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                                <span>Feeling confused by conflicting medical advice?</span>
+                                <span>Feeling confused by conflicting medical advice in Noida?</span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
@@ -111,11 +117,11 @@ export default function WebinarPage() {
                     </div>
 
                      <div>
-                        <h2 className="text-2xl font-bold mb-4">In This Webinar, You Will Learn:</h2>
+                        <h2 className="text-2xl font-bold mb-4">In This #1 Webinar, You Will Learn:</h2>
                         <ul className="space-y-3">
                             <li className="flex items-start gap-3">
                                 <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                                <span>The root causes of chronic pain from three expert perspectives.</span>
+                                <span>The root causes of chronic pain from three top Delhi NCR perspectives.</span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
@@ -135,7 +141,7 @@ export default function WebinarPage() {
 
                 <div className="space-y-8">
                      <div>
-                        <h2 className="text-2xl font-bold mb-4">Meet Your Expert Panel</h2>
+                        <h2 className="text-2xl font-bold mb-4">Meet Your #1 Expert Panel from Delhi NCR</h2>
                         <div className="space-y-4">
                             {experts.map(expert => (
                                 <div key={expert.name} className="flex items-start gap-4 p-4 border rounded-lg bg-secondary/30">
@@ -155,12 +161,12 @@ export default function WebinarPage() {
 
                     <Card>
                         <CardHeader className="text-center">
-                            <CardTitle as="h2" className="text-2xl">Get Free Access Now!</CardTitle>
+                            <CardTitle as="h2" className="text-2xl">Get Free Access to the #1 Webinar Now!</CardTitle>
                             <CardDescription>Click the button below to watch the full webinar recording instantly.</CardDescription>
                         </CardHeader>
                         <CardContent>
                             <Button className="w-full" size="lg">
-                                <PlayCircle className="mr-2" /> Watch The Webinar
+                                <PlayCircle className="mr-2" /> Watch The #1 Webinar
                             </Button>
                         </CardContent>
                     </Card>
@@ -169,9 +175,9 @@ export default function WebinarPage() {
 
             <div className="max-w-4xl mx-auto mt-16">
                  <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-headline font-bold">Common Questions</h2>
+                    <h2 className="text-3xl md:text-4xl font-headline font-bold">Top Questions for Delhi NCR Viewers</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                        Answers to common questions about our integrated approach to pain management.
+                        Answers to common questions about our #1 integrated approach to pain management in Delhi, Gurgaon, and Noida.
                     </p>
                 </div>
                 <div className="max-w-3xl mx-auto">
