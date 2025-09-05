@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -9,9 +10,12 @@ import PhoneButton from "@/components/common/PhoneButton";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ICBR | Integrated Wellness Home Services",
+  title: {
+    default: '#1 At-Home Wellness & Physiotherapy in Delhi NCR | ICBR',
+    template: '%s | ICBR - Delhi NCR',
+  },
   description:
-    "Your trusted partner for integrated wellness services in Delhi NCR. We offer Ayurveda, Naturopathy, Physiotherapy, Yoga, and more, right at your doorstep. Book our 21-day wellness package today.",
+    "Your #1 trusted partner for integrated wellness services in Delhi NCR. We offer top-ranked Ayurveda, Naturopathy, Physiotherapy, and Yoga at your doorstep. Book our 21-day wellness package for best results.",
 };
 
 export default function RootLayout({

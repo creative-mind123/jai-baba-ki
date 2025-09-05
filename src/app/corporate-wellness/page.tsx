@@ -9,53 +9,53 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Corporate Wellness Programs in Delhi NCR | ICBR',
-  description: 'Boost productivity and employee morale with our unique, natural, and side-effect-free corporate wellness programs in Delhi, Gurgaon, and Noida.',
+  title: 'Corporate Wellness Programs in Delhi, Gurgaon, Noida | ICBR',
+  description: 'Ranked #1 for Corporate Wellness Programs in Delhi NCR. Boost productivity and morale with our expert-led on-site yoga, stress management, and health workshops in Gurgaon & Noida.',
 };
 
 const benefits = [
     {
         icon: TrendingUp,
         title: 'Boost Productivity',
-        description: 'A healthy, focused team is a productive team. Our programs are designed to reduce burnout and enhance mental clarity.'
+        description: 'Our corporate wellness programs in Delhi are proven to reduce burnout and enhance mental clarity, leading to a more productive workforce.'
     },
     {
         icon: Smile,
-        title: 'Improve Morale',
-        description: 'Show your employees you value their well-being. A positive work environment helps attract and retain top talent.'
+        title: 'Improve Employee Morale',
+        description: 'Show your team you value their well-being. A positive environment with our wellness services helps attract and retain top talent in Gurgaon.'
     },
     {
         icon: UserMinus,
         title: 'Reduce Absenteeism',
-        description: 'Proactive wellness programs help reduce stress-related illnesses, leading to fewer sick days and a more reliable workforce.'
+        description: 'Proactive wellness programs in Noida help reduce stress-related illnesses, leading to fewer sick days and a more reliable workforce.'
     },
     {
         icon: HeartHandshake,
         title: 'Enhance Company Culture',
-        description: 'Foster a supportive and energetic company culture centered around holistic health and mutual respect.'
+        description: 'Foster a supportive and energetic company culture in your Delhi NCR office, centered around holistic health and mutual respect.'
     },
 ]
 
 const services = [
     {
         icon: Waves,
-        title: 'On-site Yoga & Meditation',
-        description: 'Guided sessions to de-stress, improve focus, and increase flexibility right in your office.'
+        title: 'On-site Office Yoga',
+        description: 'Guided yoga & meditation sessions in your Delhi NCR office to de-stress, improve focus, and increase flexibility.'
     },
     {
         icon: Leaf,
         title: 'Stress Management Workshops',
-        description: 'Learn natural techniques from Ayurveda and Naturopathy to build resilience and mental clarity.'
+        description: 'Equip your team with proven techniques from Ayurveda and Naturopathy to build resilience and mental clarity in the workplace.'
     },
      {
         icon: ShieldCheck,
-        title: 'Ergonomic Assessments',
-        description: 'Our physiotherapists provide assessments and exercises to prevent workplace injuries like back and neck pain.'
+        title: 'Workplace Ergonomic Assessments',
+        description: 'Our physiotherapists provide on-site ergonomic assessments in Gurgaon to prevent workplace injuries like back and neck pain.'
     },
     {
         icon: Wind,
         title: 'Mindfulness & Breathwork',
-        description: 'Equip your team with simple, powerful tools to calm the nervous system and enhance employee presence.'
+        description: 'Simple, powerful tools to calm the nervous system and enhance employee presence and focus in your Noida office.'
     },
 ]
 
@@ -68,18 +68,18 @@ export default function CorporateWellnessPage() {
             <div className="container">
                 <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                     <div>
-                        <h1 className="text-3xl md:text-5xl font-bold font-headline mb-4">Invest in Your Team's Well-being, Invest in Your Success.</h1>
+                        <h1 className="text-3xl md:text-5xl font-bold font-headline mb-4">#1 Corporate Wellness Programs in Delhi NCR</h1>
                         <p className="text-lg md:text-xl text-muted-foreground">
-                            Elevate your workplace with our unique, side-effect-free corporate wellness programs. Designed to nurture your team's health and drive your company's growth in Delhi NCR.
+                            Elevate your workplace with Delhi's top corporate wellness programs. Drive success with our on-site solutions in Gurgaon, Noida, and across the NCR.
                         </p>
                         <Button asChild size="lg" className="mt-6">
-                            <Link href="#contact">Request a Custom Plan</Link>
+                            <Link href="/book-now?service=corporate-wellness">Request a Custom Plan for Your Team</Link>
                         </Button>
                     </div>
                     <div className="relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
                         <Image
                             src="/corporate wellness.png"
-                            alt="A diverse group of office employees participating in a yoga and wellness session"
+                            alt="Top Corporate Wellness Programs in Delhi NCR"
                             data-ai-hint="corporate wellness"
                             fill
                             className="object-cover"
@@ -92,9 +92,9 @@ export default function CorporateWellnessPage() {
         <section className="py-16 lg:py-24 bg-background">
             <div className="container px-4">
                  <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-headline font-bold">Why Holistic Wellness is a Business Imperative</h2>
+                    <h2 className="text-3xl md:text-4xl font-headline font-bold">Why Employee Wellness is a Top Priority in Delhi NCR</h2>
                     <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
-                        Move beyond generic perks. Our natural, integrated approach delivers tangible returns for your business and your people by fostering a healthier, more engaged workforce.
+                        Move beyond generic perks. Our integrated approach delivers tangible returns for your business by fostering a healthier, more engaged workforce in Delhi, Gurgaon, and Noida.
                     </p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -118,9 +118,9 @@ export default function CorporateWellnessPage() {
         <section className="py-16 lg:py-24 bg-secondary">
             <div className="container px-4">
                  <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-headline font-bold">Our Corporate Wellness Solutions</h2>
+                    <h2 className="text-3xl md:text-4xl font-headline font-bold">Our Corporate Health & Wellness Solutions in Gurgaon & Noida</h2>
                     <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
-                        We don't offer quick fixes. We build sustainable wellness habits with time-tested, natural therapies customized for the corporate environment.
+                        We build sustainable wellness habits with time-tested, natural therapies customized for the modern corporate environment in Delhi NCR.
                     </p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -139,19 +139,19 @@ export default function CorporateWellnessPage() {
                      ))}
                 </div>
                  <div className="text-center mt-12">
-                    <p className="text-muted-foreground">We also offer on-site therapeutic massage, nutrition workshops, and more. All programs are fully customizable to fit your company's needs.</p>
+                    <p className="text-muted-foreground">We also offer on-site therapeutic massage, nutrition workshops, and more. All programs are fully customizable for your company in Delhi NCR.</p>
                 </div>
             </div>
         </section>
 
         <section id="contact" className="py-16 lg:py-24 bg-background">
             <div className="container text-center">
-                <h2 className="text-3xl font-bold font-headline mb-4">Ready to Build a Healthier, Happier Team?</h2>
+                <h2 className="text-3xl font-bold font-headline mb-4">Build a Healthier, Happier Team in Delhi NCR</h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                    Let's create a custom corporate wellness program for your organization in Delhi, Gurgaon, or Noida. Contact us today for a complimentary consultation and tailored proposal.
+                    Let's create a custom corporate wellness program for your organization in Delhi, Gurgaon, or Noida. Contact us today for a free consultation and a tailored proposal that ranks best for your needs.
                 </p>
                 <Button asChild size="lg">
-                    <Link href="/book-now?service=corporate-wellness">Get a Free Consultation</Link>
+                    <Link href="/book-now?service=corporate-wellness">Get Your Free Consultation Today</Link>
                 </Button>
             </div>
         </section>
