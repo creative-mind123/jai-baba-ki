@@ -70,14 +70,14 @@ export default function CorporateWellnessPage() {
                 alt="A diverse group of office employees participating in a yoga and wellness session"
                 data-ai-hint="corporate wellness"
                 fill
-                className="object-cover object-center -z-10 brightness-[.7]"
+                className="object-cover object-center -z-10 brightness-[.9]"
                 priority
             />
-            <div className="container text-white px-4">
-                <h1 className="text-4xl sm:text-5xl md:text-6xl font-headline font-bold drop-shadow-lg">
+            <div className="container text-primary-foreground px-4">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-headline font-bold drop-shadow-sm">
                     Invest in Your Team's Well-being, Invest in Your Success.
                 </h1>
-                <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl drop-shadow-md">
+                <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl drop-shadow-sm">
                    Elevate your workplace with our unique, side-effect-free corporate wellness programs. Designed to nurture your team's health and drive your company's growth in Delhi NCR.
                 </p>
                 <Button asChild size="lg" className="mt-8">
