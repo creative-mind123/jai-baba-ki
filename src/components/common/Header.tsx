@@ -26,6 +26,7 @@ import IcbrLogo from './IcbrLogo';
 
 const navLinks = [
   { href: '/#packages', label: 'Packages' },
+  { href: '/why-choose-us', label: 'Why Choose Us?' },
   { href: '/webinar', label: 'Webinar' },
   { href: '/corporate-wellness', label: 'Corporate Wellness' },
 ];
