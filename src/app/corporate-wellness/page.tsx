@@ -64,25 +64,28 @@ export default function CorporateWellnessPage() {
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
       <main className="flex-1">
-        <section className="relative py-16 sm:py-20 md:py-32 flex items-center text-center bg-secondary/50">
-             <Image
-                src="/corporate wellness.png"
-                alt="A diverse group of office employees participating in a yoga and wellness session"
-                data-ai-hint="corporate wellness"
-                fill
-                className="object-cover object-center -z-10 brightness-[.9]"
-                priority
-            />
-            <div className="container text-primary-foreground px-4">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-headline font-bold drop-shadow-sm">
-                    Invest in Your Team's Well-being, Invest in Your Success.
-                </h1>
-                <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl drop-shadow-sm">
-                   Elevate your workplace with our unique, side-effect-free corporate wellness programs. Designed to nurture your team's health and drive your company's growth in Delhi NCR.
-                </p>
-                <Button asChild size="lg" className="mt-8">
-                    <Link href="#contact">Request a Custom Plan</Link>
-                </Button>
+        <section className="py-12 md:py-20 bg-secondary">
+            <div className="container">
+                <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                    <div>
+                        <h1 className="text-3xl md:text-5xl font-bold font-headline mb-4">Invest in Your Team's Well-being, Invest in Your Success.</h1>
+                        <p className="text-lg md:text-xl text-muted-foreground">
+                            Elevate your workplace with our unique, side-effect-free corporate wellness programs. Designed to nurture your team's health and drive your company's growth in Delhi NCR.
+                        </p>
+                        <Button asChild size="lg" className="mt-6">
+                            <Link href="#contact">Request a Custom Plan</Link>
+                        </Button>
+                    </div>
+                    <div className="relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
+                        <Image
+                            src="/corporate wellness.png"
+                            alt="A diverse group of office employees participating in a yoga and wellness session"
+                            data-ai-hint="corporate wellness"
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
+                </div>
             </div>
         </section>
         
