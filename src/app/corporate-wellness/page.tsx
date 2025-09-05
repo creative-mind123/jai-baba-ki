@@ -64,7 +64,7 @@ export default function CorporateWellnessPage() {
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
       <main className="flex-1">
-        <section className="relative py-20 md:py-32 flex items-center text-center bg-secondary/50">
+        <section className="relative py-16 sm:py-20 md:py-32 flex items-center text-center bg-secondary/50">
              <Image
                 src="/corporate wellness.png"
                 alt="A diverse group of office employees participating in a yoga and wellness session"
@@ -74,7 +74,7 @@ export default function CorporateWellnessPage() {
                 priority
             />
             <div className="container text-primary-foreground px-4">
-                <h1 className="text-4xl sm:text-5xl md:text-6xl font-headline font-bold drop-shadow-sm">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-headline font-bold drop-shadow-sm">
                     Invest in Your Team's Well-being, Invest in Your Success.
                 </h1>
                 <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl drop-shadow-sm">
