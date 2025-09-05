@@ -19,7 +19,9 @@ const PinterestIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 
 export default function Footer() {
-  const mainHealthIssues = healthIssues.filter(issue => !issue.slug.includes('back-') || issue.slug === 'back-pain-relief-delhi-ncr');
+  const mainHealthIssues = healthIssues.filter(issue => 
+    !issue.slug.includes('back-') || issue.slug === 'back-pain-relief-delhi-ncr'
+  ).slice(0, 5); // Limiting to 5 for a cleaner footer
 
   return (
     <footer className="bg-secondary">
@@ -80,3 +82,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+    
