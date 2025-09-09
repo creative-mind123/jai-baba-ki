@@ -14,7 +14,26 @@ if (!process.env.GOOGLE_CREDENTIALS) {
 
 const SHEET_ID = process.env.GOOGLE_SHEET_ID;
 const SHEET_NAME = process.env.GOOGLE_SHEET_NAME;
-const CREDENTIALS = JSON.parse(process.env.GOOGLE_CREDENTIALS);
+
+// Safely parse the credentials
+let credentialsString = process.env.GOOGLE_CREDENTIALS;
+let CREDENTIALS;
+try {
+    CREDENTIALS = JSON.parse(credentialsString);
+} catch (error) {
+    // If parsing fails, try to remove potential surrounding quotes and re-parse.
+    // This can happen if the .env value is wrapped in single or double quotes.
+    if (credentialsString.startsWith("'") && credentialsString.endsWith("'")) {
+        credentialsString = credentialsString.substring(1, credentialsString.length - 1);
+    }
+    try {
+        CREDENTIALS = JSON.parse(credentialsString);
+    } catch (e) {
+        console.error("Failed to parse GOOGLE_CREDENTIALS:", e);
+        throw new Error("GOOGLE_CREDENTIALS in .env file is not valid JSON.");
+    }
+}
+
 
 const auth = new GoogleAuth({
   credentials: {
