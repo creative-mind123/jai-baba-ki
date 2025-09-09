@@ -150,7 +150,7 @@ const HealthIssuePage = ({ params }: { params: { slug: string } }) => {
               <div className="max-w-3xl mx-auto">
                  <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-xl">
                     <iframe
-                        src={`https://www.youtube.com/embed/${issue.youtubeVideoId}`}
+                        src={`https://www.youtube.com/embed/${issue.youtubeVideoId}?rel=0&showinfo=0`}
                         title="YouTube video player"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

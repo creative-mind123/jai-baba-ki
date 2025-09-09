@@ -59,6 +59,8 @@ const webinarFaq = [
     }
 ];
 
+// Placeholder video ID. Replace with actual webinar video ID.
+const WEBINAR_VIDEO_ID = 'm4g_sFplfGg';
 
 export default function WebinarPage() {
   return (
@@ -76,18 +78,14 @@ export default function WebinarPage() {
             <Card className="max-w-4xl mx-auto mb-12 shadow-xl overflow-hidden">
                 <CardContent className="p-0">
                     <div className="aspect-w-16 aspect-h-9">
-                         <Image
-                            src="https://picsum.photos/800/450"
-                            alt="A collage of wellness practices like yoga and ayurveda for Delhi NCR residents"
-                            data-ai-hint="wellness workshop"
-                            fill
-                            className="object-cover"
-                        />
-                         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-                            <Button size="lg" variant="secondary" className="text-lg h-14 w-14 rounded-full p-0">
-                                <PlayCircle className="w-10 h-10" />
-                            </Button>
-                        </div>
+                        <iframe
+                            src={`https://www.youtube.com/embed/${WEBINAR_VIDEO_ID}?rel=0&showinfo=0`}
+                            title="YouTube video player for ICBR Webinar"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            className="w-full h-full"
+                        ></iframe>
                     </div>
                 </CardContent>
             </Card>
@@ -161,12 +159,12 @@ export default function WebinarPage() {
 
                     <Card>
                         <CardHeader className="text-center">
-                            <CardTitle as="h2" className="text-2xl">Get Free Access to the #1 Webinar Now!</CardTitle>
-                            <CardDescription>Click the button below to watch the full webinar recording instantly.</CardDescription>
+                            <CardTitle as="h2" className="text-2xl">Ready to Feel Better?</CardTitle>
+                            <CardDescription>Book a personalized consultation with our #1 experts.</CardDescription>
                         </CardHeader>
                         <CardContent>
-                            <Button className="w-full" size="lg">
-                                <PlayCircle className="mr-2" /> Watch The #1 Webinar
+                            <Button asChild className="w-full" size="lg">
+                               <a href="/book-now">Book Your #1 Consultation</a>
                             </Button>
                         </CardContent>
                     </Card>
