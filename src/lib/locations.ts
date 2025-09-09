@@ -25,9 +25,9 @@ export const locations: Location[] = [
     slug: "delhi",
     description: "As the #1 provider in Delhi, we offer comprehensive home wellness services across the entire city. From North to South Delhi, our top-ranked experts are ready to bring #1 physiotherapy, yoga, and holistic health to your doorstep.",
     image: {
-      src: '/doctor at home.png',
-      alt: '#1 Doctor providing at-home wellness services in Delhi.',
-      aiHint: 'doctor home'
+      src: 'https://picsum.photos/800/600?random=41',
+      alt: '#1 Doctor providing at-home wellness services with India Gate in the background, representing Delhi.',
+      aiHint: 'doctor delhi'
     },
     faq: [
       { question: "What is the waiting time for a #1 home physiotherapy visit in Delhi?", answer: "As the #1 service in Delhi, we can typically schedule a visit within 24-48 hours anywhere in the city, including areas like Vasant Kunj, Saket, and Dwarka, depending on practitioner availability." },
@@ -70,9 +70,9 @@ export const locations: Location[] = [
     slug: "gurgaon",
     description: "Serving the corporate hub of Gurgaon with our #1 ranked at-home wellness solutions designed for a busy lifestyle. De-stress and rejuvenate with our expert yoga and massage therapists after a long day.",
     image: {
-      src: '/docotors knowking door.png',
-      alt: '#1 Doctor knocking on a door for a home visit in Gurgaon.',
-      aiHint: 'doctor visit'
+      src: 'https://picsum.photos/800/600?random=42',
+      alt: '#1 Doctor visiting a modern apartment in Gurgaon for a home wellness session.',
+      aiHint: 'doctor gurgaon'
     },
     faq: [
       { question: "Are your #1 services available on weekends in Gurgaon?", answer: "Yes, we understand the busy schedules in Gurgaon and offer #1 appointments on Saturdays and Sundays for your convenience, especially for services like physiotherapy and personal yoga." },
@@ -96,9 +96,9 @@ export const locations: Location[] = [
     slug: "noida",
     description: "Bringing our full range of #1 ranked wellness services to the planned city of Noida. Experience top-tier personalized physiotherapy and naturopathy in the comfort of your home.",
     image: {
-      src: '/doctor at home.png',
-      alt: '#1 Doctor providing at-home wellness services in Noida.',
-      aiHint: 'doctor home'
+      src: 'https://picsum.photos/800/600?random=43',
+      alt: '#1 Wellness professional providing at-home care in a residential society in Noida.',
+      aiHint: 'doctor noida'
     },
     faq: [
       { question: "Do you serve residential societies in Noida and Greater Noida?", answer: "Yes, our #1 ranked practitioners are experienced in providing services within the high-rise societies and communities of Noida, Greater Noida, and along the Noida Expressway." },
@@ -128,9 +128,9 @@ export const locations: Location[] = [
     slug: "faridabad",
     description: "Extending our #1 expert at-home wellness care to the residents of Faridabad. Get access to the best alternative therapies without leaving your home.",
     image: {
-      src: '/docotors knowking door.png',
-      alt: '#1 Doctor knocking on a door for a home visit in Faridabad.',
-      aiHint: 'doctor visit'
+      src: 'https://picsum.photos/800/600?random=44',
+      alt: '#1 Doctor providing a home visit in a Faridabad neighborhood.',
+      aiHint: 'doctor faridabad'
     },
     faq: [
       { question: "How experienced are the practitioners serving Faridabad?", answer: "We ensure that all our #1 ranked practitioners, including those serving Faridabad, are certified, experienced, and uphold our high standards of care for services like physiotherapy and Ayurveda." },
@@ -142,9 +142,9 @@ export const locations: Location[] = [
     slug: "ghaziabad",
     description: "Our #1 dedicated team is available in Ghaziabad to provide top-quality wellness services. From yoga to physiotherapy, we cover all your health needs at home.",
     image: {
-      src: '/doctor at home.png',
-      alt: '#1 Doctor providing at-home wellness services in Ghaziabad.',
-      aiHint: 'doctor home'
+      src: 'https://picsum.photos/800/600?random=45',
+      alt: '#1 Practitioner arriving for an at-home wellness appointment in Ghaziabad.',
+      aiHint: 'doctor ghaziabad'
     },
     faq: [
       { question: "Are all your services like #1 naturopathy available in Ghaziabad?", answer: "Yes, our complete range of #1 wellness services, from physiotherapy and yoga to Ayurveda and naturopathy, is available to residents across Ghaziabad, including Indirapuram and Vaishali." },

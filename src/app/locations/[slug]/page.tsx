@@ -74,7 +74,7 @@ const LocationPage = ({ params }: { params: { slug: string } }) => {
               </div>
                <div className="relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src={location.image.src.replace(/ /g, '%20')}
+                  src={location.image.src}
                   alt={location.image.alt}
                   data-ai-hint={location.image.aiHint}
                   fill
