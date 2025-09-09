@@ -11,30 +11,27 @@ if (!process.env.GOOGLE_SHEET_NAME) {
 if (!process.env.GOOGLE_CREDENTIALS) {
   throw new Error('GOOGLE_CREDENTIALS is not defined');
 }
+if (!process.env.GOOGLE_PRIVATE_KEY) {
+    throw new Error('GOOGLE_PRIVATE_KEY is not defined');
+}
+
 
 const SHEET_ID = process.env.GOOGLE_SHEET_ID;
 const SHEET_NAME = process.env.GOOGLE_SHEET_NAME;
 
-// Safely parse the credentials
-let credentialsString = process.env.GOOGLE_CREDENTIALS;
-let CREDENTIALS;
+let credentials;
 try {
-    // The private key in the JSON credentials has newline characters (\n).
-    // When stored in a .env file, these can be interpreted literally.
-    // JSON.parse requires them to be properly escaped (\\n).
-    const sanitizedCredentialsString = credentialsString.replace(/\\n/g, '\\n');
-    CREDENTIALS = JSON.parse(sanitizedCredentialsString);
+    credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS);
 } catch (error) {
     console.error("Failed to parse GOOGLE_CREDENTIALS:", error);
     throw new Error("GOOGLE_CREDENTIALS in .env file is not valid JSON. Please ensure it is copied correctly and there are no extra characters.");
 }
 
+// Re-insert the private key, ensuring newlines are correctly formatted.
+credentials.private_key = process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n');
 
 const auth = new GoogleAuth({
-  credentials: {
-    client_email: CREDENTIALS.client_email,
-    private_key: CREDENTIALS.private_key,
-  },
+  credentials,
   scopes: ['https://www.googleapis.com/auth/spreadsheets'],
 });
 
