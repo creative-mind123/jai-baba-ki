@@ -3,7 +3,7 @@
 
 import Script from 'next/script';
 
-const GA_MEASUREMENT_ID = "G-YOUR_MEASUREMENT_ID"; // IMPORTANT: REPLACE WITH YOUR OWN ID
+const GA_MEASUREMENT_ID = "G-2SK87KZTHG"; // IMPORTANT: REPLACE WITH YOUR OWN ID
 
 const GoogleAnalytics = () => {
   // You can show this component only in production
