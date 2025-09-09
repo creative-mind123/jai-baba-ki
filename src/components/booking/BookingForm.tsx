@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -13,9 +14,7 @@ import { Step2 } from './steps/Step2';
 import { Step3 } from './steps/Step3';
 import { Step4 } from './steps/Step4';
 import { useToast } from '@/hooks/use-toast';
-import { servicesList } from '@/lib/services';
-import { packages } from '@/lib/packages';
-import { format } from 'date-fns';
+import { saveBooking } from '@/app/actions/saveBooking';
 
 const bookingSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters.'),
@@ -78,10 +77,18 @@ export default function BookingForm() {
   const onSubmit: SubmitHandler<BookingFormData> = async (data) => {
     setIsSubmitting(true);
     
-    // Simulate a network request
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    const result = await saveBooking(data);
+    
+    if (result.success) {
+      setIsSubmitted(true);
+    } else {
+      toast({
+        title: "Submission Failed",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    }
 
-    setIsSubmitted(true);
     setIsSubmitting(false);
   };
 
