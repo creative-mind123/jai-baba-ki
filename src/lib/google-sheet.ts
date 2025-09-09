@@ -19,19 +19,14 @@ const SHEET_NAME = process.env.GOOGLE_SHEET_NAME;
 let credentialsString = process.env.GOOGLE_CREDENTIALS;
 let CREDENTIALS;
 try {
-    CREDENTIALS = JSON.parse(credentialsString);
+    // The private key in the JSON credentials has newline characters (\n).
+    // When stored in a .env file, these can be interpreted literally.
+    // JSON.parse requires them to be properly escaped (\\n).
+    const sanitizedCredentialsString = credentialsString.replace(/\\n/g, '\\n');
+    CREDENTIALS = JSON.parse(sanitizedCredentialsString);
 } catch (error) {
-    // If parsing fails, try to remove potential surrounding quotes and re-parse.
-    // This can happen if the .env value is wrapped in single or double quotes.
-    if (credentialsString.startsWith("'") && credentialsString.endsWith("'")) {
-        credentialsString = credentialsString.substring(1, credentialsString.length - 1);
-    }
-    try {
-        CREDENTIALS = JSON.parse(credentialsString);
-    } catch (e) {
-        console.error("Failed to parse GOOGLE_CREDENTIALS:", e);
-        throw new Error("GOOGLE_CREDENTIALS in .env file is not valid JSON.");
-    }
+    console.error("Failed to parse GOOGLE_CREDENTIALS:", error);
+    throw new Error("GOOGLE_CREDENTIALS in .env file is not valid JSON. Please ensure it is copied correctly and there are no extra characters.");
 }
 
 
