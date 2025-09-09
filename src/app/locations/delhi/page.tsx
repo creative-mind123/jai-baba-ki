@@ -70,7 +70,7 @@ const DelhiPage = () => {
                                 <li key={subLoc.slug}>
                                   <Button asChild variant="link" className="p-0 h-auto font-normal text-muted-foreground hover:text-primary">
                                     <Link href={`/locations/delhi/${subLoc.slug}`}>
-                                      Physiotherapy at home in {subLoc.name}
+                                      At-home wellness in {subLoc.name}
                                     </Link>
                                   </Button>
                                 </li>

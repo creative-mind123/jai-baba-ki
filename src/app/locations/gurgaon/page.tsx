@@ -69,7 +69,7 @@ const GurgaonPage = () => {
                                 <li key={subLoc.slug}>
                                   <Button asChild variant="link" className="p-0 h-auto font-normal text-muted-foreground hover:text-primary">
                                     <Link href={`/locations/gurgaon/${subLoc.slug}`}>
-                                      Doctor visit in {subLoc.name}
+                                      At-home wellness in {subLoc.name}
                                     </Link>
                                   </Button>
                                 </li>
