@@ -1,5 +1,5 @@
 
-import { Facebook, Instagram, Youtube } from 'lucide-react';
+import { Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 import Link from 'next/link';
 import IcbrLogo from './IcbrLogo';
 import { healthIssues } from '@/lib/health';
@@ -38,6 +38,9 @@ export default function Footer() {
                     </Link>
                     <Link href="https://www.instagram.com/bio_remedies/" aria-label="Instagram" rel="noopener noreferrer nofollow" target="_blank">
                     <Instagram className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
+                    </Link>
+                     <Link href="https://www.linkedin.com/company/international-centre-for-bio-remedies/?viewAsMember=true" aria-label="LinkedIn" rel="noopener noreferrer nofollow" target="_blank">
+                        <Linkedin className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
                     </Link>
                     <Link href="https://www.youtube.com/@ICBRBIO-REDIES" aria-label="YouTube" rel="noopener noreferrer nofollow" target="_blank">
                     <Youtube className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
