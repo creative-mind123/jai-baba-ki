@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   },
   description:
     "Ranked #1 for at-home wellness services in Delhi NCR. We offer top-ranked Ayurveda, Naturopathy, Physiotherapy, and Yoga at your doorstep. Book our 21-day wellness package for the best results.",
+  icons: {
+    icon: '/logo.png',
+  },
 };
 
 export default function RootLayout({
