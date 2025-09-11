@@ -24,6 +24,7 @@ export async function appendToSheet(row: any[]) {
   const SHEET_NAME = process.env.GOOGLE_SHEET_NAME;
 
   // Construct the credentials object from individual environment variables.
+  // The private key is modified to replace the literal '\n' characters with actual newlines.
   const credentials = {
     project_id: process.env.GOOGLE_PROJECT_ID,
     private_key: (process.env.GOOGLE_PRIVATE_KEY || '').replace(/\\n/g, '\n'),
