@@ -8,7 +8,7 @@ export async function appendToSheet(row: any[]) {
     'GOOGLE_SHEET_ID',
     'GOOGLE_SHEET_NAME',
     'GOOGLE_PROJECT_ID',
-    'GOOGLE_PRIVATE_KEY',
+    'GOOGLE_PRIVATE_KEY_B64',
     'GOOGLE_CLIENT_EMAIL',
   ];
 
@@ -23,11 +23,13 @@ export async function appendToSheet(row: any[]) {
   const SHEET_ID = process.env.GOOGLE_SHEET_ID;
   const SHEET_NAME = process.env.GOOGLE_SHEET_NAME;
 
+  // Decode the Base64 private key
+  const privateKey = Buffer.from(process.env.GOOGLE_PRIVATE_KEY_B64!, 'base64').toString('utf8');
+
   // Construct the credentials object from individual environment variables.
-  // The private key is modified to replace the literal '\n' characters with actual newlines.
   const credentials = {
     project_id: process.env.GOOGLE_PROJECT_ID,
-    private_key: (process.env.GOOGLE_PRIVATE_KEY || '').replace(/\\n/g, '\n'),
+    private_key: privateKey,
     client_email: process.env.GOOGLE_CLIENT_EMAIL,
   };
 
