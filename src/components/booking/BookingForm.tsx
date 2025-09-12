@@ -15,6 +15,7 @@ import { Step3 } from './steps/Step3';
 import { Step4 } from './steps/Step4';
 import { useToast } from '@/hooks/use-toast';
 import { saveBooking } from '@/app/actions/saveBooking';
+import { useSearchParams } from 'next/navigation';
 
 const bookingSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters.'),
@@ -42,6 +43,8 @@ export default function BookingForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { toast } = useToast();
+  const searchParams = useSearchParams();
+  const serviceQuery = searchParams.get('service');
 
   const methods = useForm<BookingFormData>({
     resolver: zodResolver(bookingSchema),
@@ -51,7 +54,7 @@ export default function BookingForm() {
         email: '',
         address: '',
         city: "Delhi",
-        service: '',
+        service: serviceQuery || '',
         package: '',
         preferredTime: "morning"
     }
@@ -90,7 +93,7 @@ export default function BookingForm() {
     } else {
       toast({
         title: "Submission Failed",
-        description: "Something went wrong. Please try again.",
+        description: result.message || "An unknown error occurred. Please try again.",
         variant: "destructive",
       });
     }
