@@ -18,10 +18,10 @@ export async function appendToSheet(row: any[]) {
   const SHEET_NAME = process.env.GOOGLE_SHEET_NAME;
 
   try {
-    // Parse the credentials from the environment variable
+    // Parse the credentials from the environment variable directly
     const credentials = JSON.parse(process.env.GCP_SERVICE_ACCOUNT_JSON!);
 
-    // Authenticate directly with the credentials object
+    // Authenticate directly with the credentials object in memory
     const auth = new GoogleAuth({
         credentials,
         scopes: ['https://www.googleapis.com/auth/spreadsheets'],
