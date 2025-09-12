@@ -46,7 +46,13 @@ export default function BookingForm() {
   const methods = useForm<BookingFormData>({
     resolver: zodResolver(bookingSchema),
     defaultValues: {
+        name: '',
+        phone: '',
+        email: '',
+        address: '',
         city: "Delhi",
+        service: '',
+        package: '',
         preferredTime: "morning"
     }
   });
