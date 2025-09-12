@@ -16,14 +16,19 @@ export async function appendToSheet(row: any[]) {
 
   const SHEET_ID = process.env.GOOGLE_SHEET_ID;
   const SHEET_NAME = process.env.GOOGLE_SHEET_NAME;
-  const SERVICE_ACCOUNT_JSON = process.env.GCP_SERVICE_ACCOUNT_JSON!;
+  const SERVICE_ACCOUNT_JSON_STRING = process.env.GCP_SERVICE_ACCOUNT_JSON!;
 
   try {
-    const credentials = JSON.parse(SERVICE_ACCOUNT_JSON);
+    const credentials = JSON.parse(SERVICE_ACCOUNT_JSON_STRING);
 
+    // Explicitly pass credentials to the auth library
     const auth = new GoogleAuth({
-        credentials,
+        credentials: {
+            client_email: credentials.client_email,
+            private_key: credentials.private_key,
+        },
         scopes: ['https://www.googleapis.com/auth/spreadsheets'],
+        projectId: credentials.project_id,
     });
 
     const sheets = google.sheets({ version: 'v4', auth });
