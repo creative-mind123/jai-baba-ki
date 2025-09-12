@@ -26,11 +26,14 @@ export async function appendToSheet(row: any[]) {
     const credentials = JSON.parse(SERVICE_ACCOUNT_JSON_STRING);
     console.log('Credentials parsed successfully.');
 
+    // ** THIS IS THE FIX: Reformat the private key **
+    const formattedPrivateKey = credentials.private_key.replace(/\\n/g, '\n');
+
     console.log('Attempting to create GoogleAuth client...');
     const auth = new GoogleAuth({
         credentials: {
             client_email: credentials.client_email,
-            private_key: credentials.private_key,
+            private_key: formattedPrivateKey,
         },
         scopes: ['https://www.googleapis.com/auth/spreadsheets'],
         projectId: credentials.project_id,
