@@ -37,7 +37,15 @@ export async function saveBooking(data: BookingFormData) {
 
     return { success: true, message: 'Booking saved successfully.' };
   } catch (error) {
-    console.error("Error saving booking to Google Sheet:", error);
-    return { success: false, message: 'Failed to save booking.' };
+    // Log the detailed error to the server console (Vercel logs)
+    if (error instanceof Error) {
+        console.error("DETAILED BOOKING ERROR:", error.message);
+        console.error("Stack Trace:", error.stack);
+        // Return the specific error message to the client for better debugging
+        return { success: false, message: `Server Error: ${error.message}` };
+    }
+    // Fallback for non-Error objects
+    console.error("An unknown error occurred:", error);
+    return { success: false, message: 'An unknown error occurred. Please check server logs.' };
   }
 }

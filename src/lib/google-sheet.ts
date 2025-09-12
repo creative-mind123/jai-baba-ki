@@ -16,12 +16,11 @@ export async function appendToSheet(row: any[]) {
 
   const SHEET_ID = process.env.GOOGLE_SHEET_ID;
   const SHEET_NAME = process.env.GOOGLE_SHEET_NAME;
+  const SERVICE_ACCOUNT_JSON = process.env.GCP_SERVICE_ACCOUNT_JSON!;
 
   try {
-    // Parse the credentials from the environment variable directly
-    const credentials = JSON.parse(process.env.GCP_SERVICE_ACCOUNT_JSON!);
+    const credentials = JSON.parse(SERVICE_ACCOUNT_JSON);
 
-    // Authenticate directly with the credentials object in memory
     const auth = new GoogleAuth({
         credentials,
         scopes: ['https://www.googleapis.com/auth/spreadsheets'],
@@ -39,7 +38,8 @@ export async function appendToSheet(row: any[]) {
     });
     return response.data;
   } catch (error) {
-    console.error('Error appending to sheet:', error);
-    throw new Error('Could not append data to Google Sheet. Check service account permissions and environment variables.');
+    console.error('Error in appendToSheet function:', error);
+    // Re-throw the error to be caught by the server action
+    throw error;
   }
 }
