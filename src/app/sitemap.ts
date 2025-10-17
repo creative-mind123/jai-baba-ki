@@ -5,7 +5,7 @@ import { healthIssues } from '@/lib/health';
 import { locations } from '@/lib/locations';
 import { posts } from '@/lib/blog';
 
-const URL = 'https://www.icbr.in';
+const URL = 'https://www.icbrwellness.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const services = servicesList.map((service) => ({
@@ -85,7 +85,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${URL}/corporate-wellness`,
       lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
+      changeFreque ncy: 'monthly' as const,
       priority: 0.7,
     },
     {
